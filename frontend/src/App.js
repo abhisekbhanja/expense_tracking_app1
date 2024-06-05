@@ -39,7 +39,7 @@ function App() {
   const get_user_data=()=>
   {
       try {
-        Axios.get("http://localhost:7000",{
+        Axios.get(`${process.env.REACT_APP_SERVER_URL}`,{
           headers: {
             'Content-Type':'application/json',
             "login-token" : localStorage.getItem("usertoken")

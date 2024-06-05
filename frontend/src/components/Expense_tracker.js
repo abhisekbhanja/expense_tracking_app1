@@ -19,7 +19,7 @@ export default function Expense_tracker({chart_data,user_email,expense_details,g
        }
        else{
         try {
-          await axios.post('http://localhost:7000/add_expense',{
+          await axios.post(`${process.env.REACT_APP_SERVER_URL}/add_expense`,{
            email:user_email,expense_type:expense_type,
              expense_amount:expense_amount})
              get_user_data()

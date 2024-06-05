@@ -14,7 +14,7 @@ export default function Signin() {
         //console.log(data);
         setloading(true)
         try {
-           const result=await axios.post('http://localhost:7000/login',data);
+           const result=await axios.post(`${process.env.REACT_APP_SERVER_URL}/login`,data);
            if (result.status===200) {
             localStorage.setItem("usertoken",result.data.token)
            

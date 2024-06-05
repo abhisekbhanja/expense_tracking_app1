@@ -15,7 +15,7 @@ export default function Signup() {
         //console.log(data);
         setloading(true)
         try {
-           const result=await axios.post('http://localhost:7000/register',data);
+           const result=await axios.post(`${process.env.REACT_APP_SERVER_URL}/register`,data);
            if (result) {
             setloading(false)
             seterr(result.status)
