@@ -1,0 +1,17 @@
+[
+    {
+        "pid":1,
+        "pname":"biskuit",
+        "price":100
+    },
+    {
+        "pid":2,
+        "pname":"cream",
+        "price":500
+    },
+    {
+        "pid":3,
+        "pname":"rice",
+        "price":50
+    }
+]

@@ -1,0 +1,16 @@
+
+.side_nav{
+    background-color: blueviolet;
+    width: 250px;
+    height: 1000px;
+}
+.nav_link{
+    padding: 10px 10px;
+}
+.nav_link:hover{
+    background-color: rgb(46, 9, 80);
+    cursor: pointer;
+}
+.dashboard_nav_links:hover{
+    text-decoration: none;
+}
